@@ -1,5 +1,5 @@
 import pytest
-from code.num import Num
+from num import Num
 
 
 class TestNum:
