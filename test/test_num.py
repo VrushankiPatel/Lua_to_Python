@@ -1,8 +1,8 @@
 import pytest
-from Num import Num
+from code.num import Num
+
 
 class TestNum:
-
     def test_num(self):
         numDict = {"Zom":[0,1,2,3,4,5,6,7,8,9]}
         for col, data in numDict.items():
