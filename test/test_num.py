@@ -1,6 +1,11 @@
 import pytest
 from num import Num
+from coerce import the
 
+
+def test_the(self):
+    self.oo(the)
+    assert True
 
 class TestNum:
     def test_num(self):
