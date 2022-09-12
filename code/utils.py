@@ -12,7 +12,7 @@ def coerce(s: str):
             return float(s)
 
         except ValueError:
-            match = re.search("^%s*(.−)%s*$")
+            match = re.search(s, "^%s*(.−)%s*$")
 
             if match == "true":
                 return True
@@ -45,7 +45,7 @@ def push(t: dict, x):
 
 
 def csv(fname: str, fun: Callable):
-    sep = ""
+    sep = ","
     stream = open(fname, mode='r')
 
     while True:
