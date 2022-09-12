@@ -2,11 +2,11 @@ import pytest
 from num import Num
 from coerce import the
 
-def o(self,d):
+def o(d):
     return str(d).replace(":", "").replace(",", ":").replace("'", "")
 
-def oo(self,d):
-	print(self.o(d))
+def oo(d):
+	print(o(d))
 	pass
 
 
