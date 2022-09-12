@@ -9,11 +9,14 @@ def oo(self,d):
 	print(self.o(d))
 	pass
 
-def test_the(self):
-    oo(the)
-    assert True
+
 
 class TestNum:
+
+    def test_the(self):
+        oo(the)
+        assert True
+
     def test_num(self):
         numDict = {"Zom":[0,1,2,3,4,5,6,7,8,9]}
         for col, data in numDict.items():
