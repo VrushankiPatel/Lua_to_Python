@@ -4,7 +4,8 @@ from coerce import the
 
 
 def test_the(self):
-    self.oo(the)
+    t = the()
+    t.oo(the)
     assert True
 
 class TestNum:
