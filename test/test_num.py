@@ -2,10 +2,15 @@ import pytest
 from num import Num
 from coerce import the
 
+def o(self,d):
+    return str(d).replace(":", "").replace(",", ":").replace("'", "")
+
+def oo(self,d):
+	print(self.o(d))
+	pass
 
 def test_the(self):
-    t = the()
-    t.oo(the)
+    oo(the)
     assert True
 
 class TestNum:

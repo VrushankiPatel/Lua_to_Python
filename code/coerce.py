@@ -15,12 +15,7 @@ class the:
         -s  --seed      random number seed                    = 10019
         -S  --seperator feild seperator                       = ,"""
 
-	def o(self,d):
-    		return str(d).replace(":", "").replace(",", ":").replace("'", "")
 
-	def oo(self,d):
-		print(self.o(d))
-		pass
 
 	def coerce(self,s: str):
 		try: 
