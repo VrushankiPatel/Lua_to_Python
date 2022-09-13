@@ -12,14 +12,14 @@ def coerce(s: str):
             return float(s)
 
         except ValueError:
-            match = re.search(s, "^%s*(.−)%s*$")
+            match = re.search(r"^\s*(.*)\s*$", s)
 
-            if match == "true":
+            if match.string == "true":
                 return True
-            elif match == "false":
+            elif match.string == "false":
                 return False
             else:
-                return match
+                return match.string
 
 
 # def cli(t: dict):
