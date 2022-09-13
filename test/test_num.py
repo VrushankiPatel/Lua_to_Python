@@ -1,6 +1,6 @@
 import pytest
 from num import Num
-from coerce import the
+from the import the
 
 def o(d):
     return str(d).replace(":", "").replace(",", ":").replace("'", "")
