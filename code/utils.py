@@ -3,24 +3,20 @@ import re
 from typing import Callable
 
 
-def coerce(s: str):
-    try:
-        return int(s)
-
-    except ValueError:
-        try:
-            return float(s)
-
-        except ValueError:
-            match = re.search(r"^\s*(.*)\s*$", s)
-
-            if match.string == "true":
+def coerce(self, s):
+        def fun(s1):
+            if s1.lower()=='true':
                 return True
-            elif match.string == "false":
+            if s1.lower()=='false':
                 return False
-            else:
-                return match.string
-
+            return s1
+        if s.isdigit(): 
+            return int(s)
+        try: 
+            float(s)
+            return float(s)
+        except ValueError: 
+            return fun(re.match("^\s*(.*?)\s*$", s).groups()[0])
 
 # def cli(t: dict):
 #     for slot, v in t.items():
