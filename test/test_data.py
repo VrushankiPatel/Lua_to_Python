@@ -2,22 +2,22 @@ from data import Data
 from utils import csv, oo, o
 
 
-# def test_csv():
-#     class TenRowTester:
-#         n = 0
+def test_csv():
+    class TenRowTester:
+        n = 0
 
-#         def print(self, row):
-#             self.n += 1
+        def print(self, row):
+            self.n += 1
 
-#             if self.n > 10:
-#                 return
-#             else:
-#                 oo(row)
+            if self.n > 10:
+                return
+            else:
+                oo(row)
 
-#     row_tester = TenRowTester()
-#     csv("../data/csv.csv", row_tester.print)
+    row_tester = TenRowTester()
+    csv("data/csv.csv", row_tester.print)
 
-#     return True
+    return True
 
 
 # def test_data():
@@ -48,4 +48,4 @@ from utils import csv, oo, o
 
 if __name__ == '__main__':
     pass
-    #test_csv()
+    test_csv()
