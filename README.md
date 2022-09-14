@@ -15,8 +15,8 @@ Test cases are called by using pytest in python. Here the test cases in the test
 
 CONTRIBUTORS:-
 
-Nirav Shah
-Vishwa Gandhi 
-Vrushanki Patel
-Pradyumna Khawas
+Nirav Shah,
+Vishwa Gandhi, 
+Vrushanki Patel,
+Pradyumna Khawas,
 Priya Saroj
