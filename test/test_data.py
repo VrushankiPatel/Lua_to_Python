@@ -47,4 +47,4 @@ from utils import csv, oo, o
 
 
 if __name__ == '__main__':
-    test_csv()
+    #test_csv()
