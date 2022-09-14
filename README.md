@@ -36,7 +36,7 @@ def decrement(x):
 def test_case1():
     assert decrement(3) == 2
  ```
-Than the results are as follows:-
+Then the results are as follows:-
 
 ![WhatsApp Image 2022-09-14 at 10 52 29 AM](https://user-images.githubusercontent.com/111928135/190189229-f867cebd-4dde-479f-9dd2-9da318ae2dab.jpeg)
 
