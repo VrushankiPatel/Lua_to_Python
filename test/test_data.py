@@ -21,7 +21,7 @@ def test_csv():
 
 
 # def test_data():
-#     d = Data("../data/csv.csv")
+#     d = Data("data/csv.csv")
 #
 #     for _, col in d.cols.y.items():
 #         oo(col)
@@ -30,7 +30,7 @@ def test_csv():
 #
 #
 # def test_stats():
-#     data = Data("../data/csv.csv")
+#     data = Data("data/csv.csv")
 #
 #     def div(col):
 #         return col.div()
