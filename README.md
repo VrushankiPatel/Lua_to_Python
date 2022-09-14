@@ -2,7 +2,7 @@
 
 [![DOI:10.1101/2021.01.08.425840](http://img.shields.io/badge/DOI-10.1101/2021.01.08.425840-B31B1B.svg)](https://doi.org/10.1101/2021.01.08.425840)
 
-Welcome to Group 44 repository for 22 fall Software Engineering homework 2 & 3!
+Welcome to Group 44 repository for 2022 fall Software Engineering homework 2 & 3!
 
 This homework aims to port a program written in Lua (source) to Python while using good software engineering practices. The program reads a CSV file and generate summaries of columns (medians and standard deviation for numerics; mode and entropy for symbolic columns). This intends to read a CSV file and generate summaries of both numeric and symbolic columns, that is, medians and standard deviation for numeric columns, and mode and entropy for symbolic columns.
 
