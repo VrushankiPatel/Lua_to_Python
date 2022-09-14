@@ -1,6 +1,5 @@
 ## LUA TO PYTHON
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![DOI:10.1101/2021.01.08.425840](http://img.shields.io/badge/DOI-10.1101/2021.01.08.425840-B31B1B.svg)](https://doi.org/10.1101/2021.01.08.425840)
 
 Welcome to Group 44 repository for 22 fall Software Engineering homework 2 & 3!
@@ -48,3 +47,9 @@ Vishwa Gandhi,
 Vrushanki Patel,
 Pradyumna Khawas,
 Priya Saroj
+
+## LICENSE
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+ 
+
+
