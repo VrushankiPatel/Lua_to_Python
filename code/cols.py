@@ -1,28 +1,27 @@
-from sym import Sym
 from num import Num
+from sym import Sym
 
-class Cols:
+class cols:
     def __init__(self, names):
         self.names = names
-        self.all = []      #columns
-        self.klass = None  #
-        self.x = []
-        self.y = []
-        
-        #iterate name and index
-        for c, s in enumerate(names):
-            col = Num(c, s) if s[0].isupper() else Sym(c,s)
-            self.all.append(col)
+        self.columns = []
+        self.klass = None
+        self.x_columns = []
+        self.y_columns = []
+        # iterate through names and also index
+        for i, name in enumerate(names):
+            # if the name starts with an uppercase letter, it is Numeric
+            col = Num(i, name) if name[0].isupper() else Sym(i, name)
+            self.columns.append(col)
             
-            if s[-1] != ":":
-                if s[-1] in ['+', '-', '!']:
-                    self.y.append(col)
+            # if it doesn't end with a :,
+            if name[-1] != ':':
+                # add it as a dependent (Y) column if it ends with +, -, or !, or independent (X) otherwise
+                if name[-1] in ['+', '-', '!']:
+                    self.y_columns.append(col)
                 else:
-                    self.x.append(col)
+                    self.x_columns.append(col)
                 
-                if s[-1] == ":":
+                # if the name ends with !, it is the klass column
+                if name[-1] == '!':
                     self.klass = col
-
-def push(t, x):
-    t[1+len(t)] = x
-    return x

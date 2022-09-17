@@ -1,6 +1,12 @@
 import math
 import re
 from typing import Callable, Any
+from csv import reader
+
+
+def rnd(x,places):
+    mult = pow(10,(places or 2))
+    return math.floor(x * mult +0.5)/mult
 
 
 def coerce(s):
@@ -37,27 +43,26 @@ def per(t: dict, p: int):
     return q
 
 
-def push(t: list, x):
-    t.append(x)
-
+def push(t, x):
+    t[1+len(t)] = x
     return x
 
+def csv(fname, fun):
+    sep = the().func_the()["seperator"]
+    
+    #src = open(fname)
+    with open(fname,'r') as src:
+        rdr = reader(src, delimiter=sep)
+        for l in rdr:
+            d={}
+            for v in l:
+                d[len(d)]=coerce(v)
+            #print(d)
+            fun(d)
 
-def csv(fname: str, fun: Callable):
-    sep = ","
-    stream = open(fname, mode='r')
-
-    while True:
-        s = stream.readline()
-
-        if not s:
-            break
-        else:
-            t = [coerce(s1) for s1 in s.split(sep)]
-            fun(t)
 
 
-def o(t: Any):
+#def o(t: Any):
     # if not isinstance(t, dict):
     #     return str(t)
     #
@@ -77,10 +82,16 @@ def o(t: Any):
     #
     # return "{" + table.concat(u, " ") +  "}"
 
-    return t
+    #return t
 
-def oo(row):
-    print(o(row))
+def o(d):
+    return str(d).replace(":", "").replace(",", ":").replace("'", "")
+
+
+def oo(d):
+    print(o(d))
+    pass
+
 
 
 class the:
@@ -92,7 +103,7 @@ class the:
         OPTIONS:
         -e  --eg        start-up example                      = nothing
         -d  --dump      on test failure, exit with stack dump = false
-        -f  --file      file with csv data                    = ../data/auto93.csv
+        -f  --file      file with csv data                    = csv.csv
         -h  --help      show help                             = false
         -n  --nums      number of nums to keep                = 512
         -s  --seed      random number seed                    = 10019
@@ -103,7 +114,7 @@ class the:
         reexp = r"[-][\S]+[\s]+[-][-]([\S]+)[^\n]+= ([\S]+)"
         dictre = re.findall(reexp, help)
         for key, value in dictre:
-            self.the[key] = self.coerce(value)
+            self.the[key] = coerce(value)
         return self.the
 
 
