@@ -11,7 +11,7 @@ class Cols:
         
         #iterate name and index
         for c, s in enumerate(names):
-            if name.istitle():
+            if s.istitle():
                 curCol = push(self.all, Num(c,s))
             else:
                 curCol = push(self.all, Sym(c,s)) 
@@ -23,7 +23,7 @@ class Cols:
                     push(self.x, curCol)
                 
                 if s[-1] == ":":
-                    self.klass = name
+                    self.klass = s
 
 def push(t, x):
     t[1+len(t)] = x
