@@ -4,7 +4,7 @@ def copyd(t):
         return t
     u = {}
     for k in t:
-        u[k] = copydic(t[k])
+        u[k] = copyd(t[k])
     return u
 
 # ‘Row‘ holds one record
