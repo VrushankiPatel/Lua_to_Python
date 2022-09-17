@@ -21,7 +21,7 @@ class Num:
     isSorted = True  # no updates since last sort data
 
 
-    def __init__(self, c: int, s: str):
+    def __init__(self, c=0, s=""):
         '''
                 Creates Num object.
 
