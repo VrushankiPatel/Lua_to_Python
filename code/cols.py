@@ -4,26 +4,24 @@ from num import Num
 class Cols:
     def __init__(self, names):
         self.names = names
-        self.all = {}      #columns
-        self.klass = {}  #
-        self.x = {}
-        self.y = {}
+        self.all = []      #columns
+        self.klass = None  #
+        self.x = []
+        self.y = []
         
         #iterate name and index
         for c, s in enumerate(names):
-            if s.istitle():
-                curCol = push(self.all, Num(c,s))
-            else:
-                curCol = push(self.all, Sym(c,s)) 
+            col = Num(c, s) if s[0].isupper() else Sym(c,s)
+            self.all.append(col)
             
             if s[-1] != ":":
-                if s[-1] in ['+', '-']:
-                    push(self.y, curCol)
+                if s[-1] in ['+', '-', '!']:
+                    self.y.append(col)
                 else:
-                    push(self.x, curCol)
+                    self.x.append(col)
                 
                 if s[-1] == ":":
-                    self.klass = s
+                    self.klass = col
 
 def push(t, x):
     t[1+len(t)] = x

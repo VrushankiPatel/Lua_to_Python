@@ -21,7 +21,7 @@ class Num:
     isSorted = True  # no updates since last sort data
 
 
-    def __init__(self, c=0, s=""):
+    def __init__(self, c: int, s: str):
         '''
                 Creates Num object.
 
@@ -102,16 +102,7 @@ class Num:
         in50 = int(len(a) * 0.5)  # index 50
         
         return a[in50]
-    def __str__(self):
-        D={}
-        D["at"]=self.at
-        D["hi"]=self.hi
-        D["isSorted"]=self.isSorted
-        D["lo"]=self.lo
-        D["n"]=self.n
-        D["name"]=self.name
-        #D["w"]=self.w
-        return str(D)
+    
 if __name__ == '__main__':
     x = Num(c = 5, s = "Zom")
     for i in range(10):

@@ -1,12 +1,7 @@
 import math
 import re
 from typing import Callable, Any
-from csv import reader
 
-
-def rnd(x,places):
-    mult = pow(10,(places or 2))
-    return math.floor(x * mult +0.5)/mult
 
 def coerce(s):
     def fun(s1):
@@ -43,32 +38,49 @@ def per(t: dict, p: int):
 
 
 def push(t: list, x):
-    t[1+len(t)] = x
+    t.append(x)
 
     return x
 
 
-def csv(fname, fun):
-    sep = the().func_the()["seperator"]
-    
-    #src = open(fname)
-    with open(fname,'r') as src:
-        rdr = reader(src, delimiter=sep)
-        for l in rdr:
-            d={}
-            for v in l:
-                d[len(d)]=coerce(v)
-            #print(d)
-            fun(d)
+def csv(fname: str, fun: Callable):
+    sep = ","
+    stream = open(fname, mode='r')
+
+    while True:
+        s = stream.readline()
+
+        if not s:
+            break
+        else:
+            t = [coerce(s1) for s1 in s.split(sep)]
+            fun(t)
 
 
-def o(d):
-    return str(d).replace(":", "").replace(",", ":").replace("'", "")
+def o(t: Any):
+    # if not isinstance(t, dict):
+    #     return str(t)
+    #
+    # def show(_k, _v):
+    #     if re.search(str(k), "^_") is not None:
+    #         _v = o(_v)
+    #
+    #         return str.format(":%s %s", _k, _v) if len(t) == 0 else str(_v)
+    #
+    # u = {}
+    #
+    # for k, v in t.items():
+    #     u[1 + len(u)] = show(k,v)
+    #
+    # if  len(t) == 0:
+    #     table.sort(u)
+    #
+    # return "{" + table.concat(u, " ") +  "}"
 
+    return t
 
-def oo(d):
-    print(o(d))
-    pass
+def oo(row):
+    print(o(row))
 
 
 class the:
@@ -80,7 +92,7 @@ class the:
         OPTIONS:
         -e  --eg        start-up example                      = nothing
         -d  --dump      on test failure, exit with stack dump = false
-        -f  --file      file with csv data                    = csv.csv
+        -f  --file      file with csv data                    = ../data/auto93.csv
         -h  --help      show help                             = false
         -n  --nums      number of nums to keep                = 512
         -s  --seed      random number seed                    = 10019
@@ -91,7 +103,7 @@ class the:
         reexp = r"[-][\S]+[\s]+[-][-]([\S]+)[^\n]+= ([\S]+)"
         dictre = re.findall(reexp, help)
         for key, value in dictre:
-            self.the[key] = coerce(value)
+            self.the[key] = self.coerce(value)
         return self.the
 
 

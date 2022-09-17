@@ -19,11 +19,11 @@ class TestNum:
                 number = num.nums()
                 median = num.mid()
                 sd = num.div()
-                assert number == [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] and median == 5 and 3.1 <= sd <= 4.1
+                assert number == [0,1,2,3,4,5,6,7,8,9] and median == 5 and 3.1 <= sd <= 4.1
 
     def test_bignum(self):
         num = Num(0, "")
         he = {'nums': 50}
-        for i in range(1, 500):
+        for i in range(0, 50):
             num.add(i)
         assert len(num._has) == 50
