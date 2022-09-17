@@ -86,5 +86,5 @@ def test_stats():
     assert True
 
 #test_csv()
-test_data()
+#test_data()
 #test_stats()
