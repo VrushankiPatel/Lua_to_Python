@@ -25,7 +25,7 @@ To check the version installed run the following command.
 pytest --version
 ```
 
-## Usage
+## USAGE
 
 The following is the example test case written in python using the pytest.
 
@@ -39,6 +39,11 @@ def test_case1():
 Then the results are as follows:-
 
 ![WhatsApp Image 2022-09-14 at 10 52 29 AM](https://user-images.githubusercontent.com/111928135/190189229-f867cebd-4dde-479f-9dd2-9da318ae2dab.jpeg)
+
+## COVERAGE
+
+![coverage](https://user-images.githubusercontent.com/111928135/191138865-497f52df-58f8-4142-8b30-9b4155690198.png)
+
 
 ## CONTRIBUTORS:-
 
