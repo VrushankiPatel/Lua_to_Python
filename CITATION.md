@@ -6,5 +6,5 @@ authors:
  given-names: "Pradyumna"
  given-names: "Nirav"
  given-names: "Priya"
-title: "Arithematic calculator"
-url: "https://github.com/vishwagandhi1610/sehw1.git"
+title: "SE HW 2"
+url: "https://github.com/VrushankiPatel/sehw2"
