@@ -13,7 +13,7 @@ We are working in python in a command-line application. Best practices should be
 When you approve a pull request, it's important that you thoroughly vet the code for issues and errors. Be sure to check all changes and provide meaningful comments if something doesn't pass your inspection. By approving a pull request, you are equally responsible as the author for its quality, so make sure you're only letting in quality code!
 
 ## How To Get Started
-Follow the steps outlined in [INSTALL.md]() and make sure to also look at [README.md](https://github.com/VrushankiPatel/sehw2/blob/main/README.md) and [CITATION.md](). This will guide you on how to set up your environment and get started!
+Follow the steps outlined in [INSTALL.md]() and make sure to also look at [README.md](https://github.com/VrushankiPatel/sehw2/blob/main/README.md) and [CITATION.md](https://github.com/VrushankiPatel/sehw2/blob/main/CITATION.md). This will guide you on how to set up your environment and get started!
 
 ## How To Run and Add Tests
 py -m code.main -e ALL
