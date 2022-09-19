@@ -1,6 +1,6 @@
 ## LUA TO PYTHON
 
-[![DOI:10.1101/2021.01.08.425840](http://img.shields.io/badge/DOI-10.1101/2021.01.08.425840-B31B1B.svg)](https://doi.org/10.1101/2021.01.08.425840)
+[![DOI](https://zenodo.org/badge/533039981.svg)](https://zenodo.org/badge/latestdoi/533039981)
 
 Welcome to Group 44 repository for 2022 fall Software Engineering homework 2 & 3!
 
