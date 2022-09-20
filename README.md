@@ -25,6 +25,11 @@ To check the version installed run the following command.
 pytest --version
 ```
 
+Note: For local setup it is recommended to add git hooks to run tests after each commit. To copy add links to .git/hooks, run the following command.
+```shell script
+ln -s -f git_hooks/post-commit .git/hooks/post-commit
+```
+
 ## USAGE
 
 The following is the example test case written in python using the pytest.
