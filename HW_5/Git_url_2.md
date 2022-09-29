@@ -9,7 +9,7 @@ but nevertheless, here is a track record that everyone is contributing a lot)| 2
 |Number of commits| 3 | Present in Insights -> Contributors|
 |Number of commits: by different people| 1 | Present in Insights -> Contributors|
 |Issues reports: there are **many**|
-|Issues are being closed| 0 |Present in Issues|
+|Issues are being closed| 3 |Present in Issues|
 |DOI badge: exists| 3 |Visible in Repository|
 |Docs: doco generated, format not ugly | 3 |Assessed by viewing files|
 |Docs: what: point descriptions of each class/function (in isolation) | 3 | Explained in README.md|
@@ -25,7 +25,7 @@ but nevertheless, here is a track record that everyone is contributing a lot)| 2
 |Test cases exist| 3 |test cases are in test folder, with 81% test coverage|
 |Test cases are routinely executed| - |travis.yml|
 |The files CONTRIBUTING.md lists coding standards and lots of tips on how to extend the system without screwing things up| 3 | |
-|Issues are discussed before they are closed| 0 |0 open issues|
+|Issues are discussed before they are closed| 3 |0 open issues, 4 closed issues|
 |Chat channel: exists| 1 |not provided|
 |Test cases: a large proportion of the issues related to handling failing cases.| - |issues|
 |Evidence that the whole team is using the same tools: everyone can get to all tools and files| 3 | |
