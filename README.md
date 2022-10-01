@@ -1,7 +1,7 @@
 ## LUA TO PYTHON  https://vrushankipatel.github.io/sehw2/#/
 
 [![DOI](https://zenodo.org/badge/533039981.svg)](https://zenodo.org/badge/latestdoi/533039981)
-[![codecov](https://codecov.io/gh/VrushankiPatel/sehw2/branch/main/graph/badge.svg?token=SB69L5UNVL)](https://codecov.io/gh/VrushankiPatel/sehw2)
+
 Welcome to Group 44 repository for 2022 fall Software Engineering homework 2 & 3!
 
 This homework aims to port a program written in Lua (source) to Python while using good software engineering practices. The program reads a CSV file and generate summaries of columns (medians and standard deviation for numerics; mode and entropy for symbolic columns). This intends to read a CSV file and generate summaries of both numeric and symbolic columns, that is, medians and standard deviation for numeric columns, and mode and entropy for symbolic columns.
@@ -46,6 +46,8 @@ Then the results are as follows:-
 ![WhatsApp Image 2022-09-14 at 10 52 29 AM](https://user-images.githubusercontent.com/111928135/190189229-f867cebd-4dde-479f-9dd2-9da318ae2dab.jpeg)
 
 ## COVERAGE
+
+[![codecov](https://codecov.io/gh/VrushankiPatel/sehw2/branch/main/graph/badge.svg?token=SB69L5UNVL)](https://codecov.io/gh/VrushankiPatel/sehw2)
 
 ![coverage](https://user-images.githubusercontent.com/111928135/191138865-497f52df-58f8-4142-8b30-9b4155690198.png)
 
