@@ -21,8 +21,8 @@ but nevertheless, here is a track record that everyone is contributing a lot)| 2
 |Use of code formatters. | 0 ||
 |Use of syntax checkers. | 0 ||
 |Use of code coverage | 0 | code coverage badge is not there|
-|Other automated analysis tools| 0 ||
-|Test cases exist| 3 |test cases are in test folder, with 81% test coverage|
+|Other automated analysis tools| 0 | |
+|Test cases exist| 2 |test cases exist|
 |Test cases are routinely executed| 1 | |
 |The files CONTRIBUTING.md lists coding standards and lots of tips on how to extend the system without screwing things up| 3 | |
 |Issues are discussed before they are closed| 3 |0 open issues, 4 closed|
